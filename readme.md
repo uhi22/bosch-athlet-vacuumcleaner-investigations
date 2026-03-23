@@ -49,4 +49,5 @@ Avrdude done.  Thank you.
 
 ## References
 
-* Ref1: microcontroller.net forum discussion
+* Ref1: microcontroller.net forum discussion https://www.mikrocontroller.net/topic/513088
+* Ref2: Lenas Schaltplan: https://www.mikrocontroller.net/topic/513088#7515079
