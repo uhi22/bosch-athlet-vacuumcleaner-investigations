@@ -47,7 +47,29 @@ Avrdude done.  Thank you.
 ```
 
 
+## Controller Pins
+
+
+| ATmega Pin | ATMega Function | Arduino Pin |Athlet Function |
+| ---------- | ----------- |----------- |----------- |
+|    1       |  PD3        |   3   |   switch?   |
+|    2       |  PD4        |   4   |   switch?   |
+|    7       |  PB6        |  *)   |   LED2 blue   |
+|    8       |  PB7        |  *)   |   LED1 red    |
+|    9       |  PD5        |   5   |   switch?   |
+|   13       |  PB1        |   9   |   CN2 MainMotor    |
+|   14       |  PB2        |  10   |   CN3 AuxMotor    |
+|   15       |  PB3 MOSI   |  11   |   LED3     |
+|   16       |  PB4 MISO   |  12   |   LED4     |
+|   17       |  PB5 SCK    |  13   |   LED5     |
+|   10       |  PD6        |   6   |   GateDriverEnable    |
+|   ?        |  ?          |   ?   |   PressureSensor?     |
+|   ?        |  ?          |   ?   |   CurrentFeedback?    |
+
+The access to PB6 and PB7 is not standard Arduino, and depends on the used header files. One approach is to install "MiniCore (328pb)" but this is an other dependency which complicates the usage. So we use direct port access instead.
+
 ## References
 
 * Ref1: microcontroller.net forum discussion https://www.mikrocontroller.net/topic/513088
 * Ref2: Lenas Schaltplan: https://www.mikrocontroller.net/topic/513088#7515079
+* Ref3: ino file for 32V V1_4 from Drago Sept 2024: https://www.mikrocontroller.net/topic/513088#7734328
